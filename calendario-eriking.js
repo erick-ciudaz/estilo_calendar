@@ -1,4 +1,4 @@
-
+    console.log("hola mundo");
     var dir=`<link rel="stylesheet" type="text/plain" href="https://raw.githubusercontent.com/erick-ciudaz/estilo_calendar/master/cal.css">`;
 
     document.write(dir);
