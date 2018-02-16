@@ -35,7 +35,11 @@
       border-radius: 50%;
       cursor: pointer; }
   #calendario-eriking #cont_cal {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     background: rgba(150, 15, 78, 0.2);
     position: absolute;
@@ -44,17 +48,26 @@
     display: none; }
     #calendario-eriking #cont_cal #view_cal {
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-user-select: none;
       border: 2px var(--color-prin) solid; }
       #calendario-eriking #cont_cal #view_cal #titulo_mes {
         background: var(--color-prin);
         color: var(--text-color);
         padding: 0.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         /*space betwen sirve para alinear todos los elementos hijos en el contenedor */
-        justify-content: space-between; }
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
         #calendario-eriking #cont_cal #view_cal #titulo_mes button {
           border: none;
           outline: none;
@@ -82,44 +95,83 @@
           opacity: 0.4; }
         #calendario-eriking #cont_cal #view_cal #cont_dias .dia {
           cursor: pointer;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          align-items: center;
-          justify-content: center; }
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
           #calendario-eriking #cont_cal #view_cal #cont_dias .dia:hover {
             outline: 2px var(--color-prin) solid;
-            filter: grayscale(50%); }
+            -webkit-filter: grayscale(50%);
+                    filter: grayscale(50%); }
   #calendario-eriking .bajar_cal {
-    animation-name: bajar;
-    animation-duration: 0.5s;
-    animation-direction: linear; }
+    -webkit-animation-name: bajar;
+            animation-name: bajar;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-direction: linear;
+            animation-direction: linear; }
+@-webkit-keyframes bajar {
+  to {
+    top: 0; }
+  from {
+    top: -100%; } }
 @keyframes bajar {
   to {
     top: 0; }
   from {
     top: -100%; } }
   #calendario-eriking .animacion-der {
-    animation: der 0.2s linear; }
+    -webkit-animation: der 0.2s linear;
+            animation: der 0.2s linear; }
   #calendario-eriking .regresa-der {
-    animation: der-r 0.2s linear; }
+    -webkit-animation: der-r 0.2s linear;
+            animation: der-r 0.2s linear; }
+@-webkit-keyframes der {
+  from {
+    right: 0%; }
+  to {
+    right: -100%; } }
 @keyframes der {
   from {
     right: 0%; }
   to {
     right: -100%; } }
+@-webkit-keyframes der-r {
+  from {
+    right: -100%; }
+  to {
+    right: 0%; } }
 @keyframes der-r {
   from {
     right: -100%; }
   to {
     right: 0%; } }
   #calendario-eriking .animacion-izq {
-    animation: izq 0.2s linear; }
+    -webkit-animation: izq 0.2s linear;
+            animation: izq 0.2s linear; }
   #calendario-eriking .regresa-izq {
-    animation: izq-r 0.2s linear; }
+    -webkit-animation: izq-r 0.2s linear;
+            animation: izq-r 0.2s linear; }
+@-webkit-keyframes izq-r {
+  from {
+    left: -100%; }
+  to {
+    left: 0%; } }
 @keyframes izq-r {
   from {
     left: -100%; }
   to {
     left: 0%; } }
+@-webkit-keyframes izq {
+  from {
+    left: 0%; }
+  to {
+    left: -100%; } }
 @keyframes izq {
   from {
     left: 0%; }
@@ -127,5 +179,3 @@
     left: -100%; } }
 #eriking-cal {
   display: none; }
-
-/*# sourceMappingURL=cal.css.map */
