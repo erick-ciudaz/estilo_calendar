@@ -164,7 +164,7 @@
             var dia=new Date().getDate();
             /*saca dia*/
             var a_temp=año=new Date().getFullYear();
-            let cadenita=`${año}-${mes}-${dia}`;
+            let cadenita=`${año}-${mes+1}-${dia}`;
             var val_dia=val_mes=val_año="";
             var dias=new Array("do","lu","ma","mi","ju","vi","sa");
             var meses=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
