@@ -1,5 +1,5 @@
 
-    var dir=`<link rel="stylesheet" href="https://cdn.rawgit.com/erick-ciudaz/estilo_calendar/master/cal.css">`;
+    var dir=`<link rel="stylesheet" href="https://rawgit.com/erick-ciudaz/estilo_calendar/master/cal.css">`;
 
     document.write(dir);
 
