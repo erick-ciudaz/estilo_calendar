@@ -1,4 +1,5 @@
 # estilo_calendar
+ date picker, selector de fecha
 ## Modo de uso
 ### 1.- en una etiqueta script colocar:
 
