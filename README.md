@@ -3,7 +3,7 @@
 ## Modo de uso
 ### 1.- en una etiqueta script colocar:
 
-      <script src="https://cdn.rawgit.com/erick-ciudaz/estilo_calendar/master/calendario-eriking.js"></script>    
+      <script src="https://rawgit.com/erick-ciudaz/estilo_calendar/master/calendario-eriking.js"></script>    
     
 ### 2.- en su documento HTML colocar:
     
