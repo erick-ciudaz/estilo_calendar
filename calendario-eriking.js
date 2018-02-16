@@ -151,6 +151,7 @@
             padre=inp.parentNode;
             inp.type='hidden';
             
+            
             var sw=0,
                 box,
                 d,
@@ -163,13 +164,13 @@
             var dia=new Date().getDate();
             /*saca dia*/
             var a_temp=año=new Date().getFullYear();
-
+            let cadenita=`${año}-${mes}-${dia}`;
             var val_dia=val_mes=val_año="";
             var dias=new Array("do","lu","ma","mi","ju","vi","sa");
             var meses=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
             var dias_mes=new Array(31,(a_temp%4===0)?(29):(28),31,30,31,30,31,31,30,31,30,31);
-           
-
+            
+            inp.value=cadenita;
             box=crear_elemento("div","calendario-eriking",padre);
             d=crear_elemento("input","dia",box);
             m=crear_elemento("input","mes",box);
