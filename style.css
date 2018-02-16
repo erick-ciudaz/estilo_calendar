@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  
+  background: #ffaa; }
+  body .cont {
+    width: 75%;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column; }
+    body .cont > div {
+
+      margin: 0 auto 1rem auto; }
+    .sd
+    {
+
+
+    }
+    .ka
+    {
+
+      
+    }
+    body .cont .title {
+      font-size: 2rem;
+      font-family: Helvetica, sans-serif; }
+
+
+
+/*# sourceMappingURL=style.css.map */

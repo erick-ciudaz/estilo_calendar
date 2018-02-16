@@ -1,0 +1,195 @@
+/*sector de root donde agregamos las variables css*/
+\:root
+    --color-prin: #437272
+    --text-color: white
+
+/*defincion de mixins*/
+
+$colori: var(--color-prin)
+
+/*estilos del calendario*/
+@import url('https://fonts.googleapis.com/css?family=Gruppo|Macondo+Swash+Caps|Federant')
+
+#calendario-eriking
+    background: white
+    border-radius: 0.5rem
+    position: relative
+    font-family: "Gruppo" , sans-serif
+    font-weight: bold
+ 
+
+    > input
+        
+        
+        //text-align: center
+        margin: 0.2rem
+        width: 1.5rem
+        border: none
+        outline: none
+        padding: 0.2rem
+        font-size: 0.8rem
+        font-family: sans-serif
+        
+        //font-weight: bold
+
+        &:nth-child(1),&:nth-child(2)
+            border-radius: 0 0 2rem 0
+            border-right: 2px black solid
+            margin-right: 0
+
+        &:nth-child(3),&:nth-child(2)
+
+            margin-left: 0    
+
+        &:nth-child(3),&:nth-child(4)
+            width: 2rem    
+
+        &[type="submit"]
+            border: none
+            height: 2rem
+            border-radius: 50%
+            cursor: pointer
+
+    #cont_cal
+
+        width: max-content
+        height: max-content
+        background: rgba(150,15,78,0.2)
+        position: absolute
+        z-index: 5
+        overflow: hidden
+        display: none
+
+
+        #view_cal
+            // width:  15rem
+            // height: 7rem
+            position: relative
+            display: flex
+            flex-direction: column
+            -webkit-user-select: none
+            border: 2px var(--color-prin) solid
+
+            #titulo_mes
+
+                background: var(--color-prin)
+                color: var(--text-color)
+                padding: 0.5rem
+                display: flex
+                /*space betwen sirve para alinear todos los elementos hijos en el contenedor*/
+                justify-content: space-between 
+
+                button
+                    border: none
+                    outline: none
+                    cursor: pointer
+                    width: 1.2rem
+                    height: 1.2rem
+
+                    border-radius: 50%
+                    background: white
+
+                        
+                        
+
+            #cont_dias
+                
+                background: white
+                display: grid
+                /*grid template crea un maquetado el cual se le proporciona la medida de todos los elementos si son muchos elementos usar repeat()*/
+                grid-template-columns: repeat(7,2rem)
+                grid-template-rows: repeat(7,1.5rem)
+                /*distancia entre columnas*/
+                grid-column-gap: 0.1rem
+                /*distancia entre filas*/
+                grid-row-gap: 0.1rem
+                
+                /*columns numero de columnas*/ 
+
+                .dia_cal
+                    background: var(--color-prin)
+                    color: var(--text-color)
+
+                .vacio
+                    
+                    background: var(--color-prin)
+                    opacity: 0.4
+                    
+
+                .dia
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    
+                 
+                    &:hover
+                    
+                        outline: 2px var(--color-prin) solid
+                        filter: grayscale(50%)
+                        
+                   
+
+
+    /*Estilos Animaciones................. */ 
+
+    .bajar_cal
+        animation-name: bajar
+        animation-duration: 0.5s
+        animation-direction: linear
+        
+
+
+        @keyframes bajar
+            to
+                top: 0
+            
+            from
+
+                top: -100%
+
+    .animacion-der
+        animation: der 0.2s linear
+    .regresa-der
+        animation: der-r 0.2s linear
+
+    @keyframes der
+        from
+            right: 0%
+        to
+            right: -100%
+
+    @keyframes der-r
+        from
+            right: -100%
+        to
+            right: 0%
+
+
+    .animacion-izq
+        animation: izq 0.2s linear
+    .regresa-izq
+        animation: izq-r 0.2s linear
+    
+    @keyframes izq-r
+        from
+            left: -100%
+        to
+            left:  0%
+
+    @keyframes izq
+        from
+            left: 0%
+        to
+            left: -100%
+
+#eriking-cal
+    display: none
+    
+
+
+
+
+   
+
+
