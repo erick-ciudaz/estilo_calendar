@@ -1,6 +1,6 @@
 
-    var dir=`<link rel="stylesheet" href="https://rawgit.com/erick-ciudaz/estilo_calendar/master/cal.css">`;
-    let new_link=document.createElement("link");
+    // var dir=`<link rel="stylesheet" href="https://rawgit.com/erick-ciudaz/estilo_calendar/master/cal.css">`;
+    // let new_link=document.createElement("link");
     new_link.rel="stylesheet";
     new_link.type="text/css";
     new_link.href="https://rawgit.com/erick-ciudaz/estilo_calendar/master/cal.css";
