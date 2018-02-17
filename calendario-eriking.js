@@ -1,7 +1,10 @@
 
     var dir=`<link rel="stylesheet" href="https://rawgit.com/erick-ciudaz/estilo_calendar/master/cal.css">`;
-
-    document.write(dir);
+    let new_link=document.createElement("link");
+    new_link.rel="stylesheet";
+    new_link.type="text/css";
+    new_link.href="https://rawgit.com/erick-ciudaz/estilo_calendar/master/cal.css";
+    document.getElementsByTagName("head")[0].appendChild(new_link);
 
     onload=function () {
         
