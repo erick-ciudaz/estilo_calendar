@@ -1,0 +1,16 @@
+##ignoramos los archivos sass
+*.sass
+##ignoramos los archivos html
+*.html
+
+##ignoramos los q acaben en map
+
+*.map 
+
+##ignoramos los q acaben en sassc
+
+*.sassc
+
+##ignoramos el estilo css
+
+style.css
