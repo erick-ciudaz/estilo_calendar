@@ -21,3 +21,7 @@ Agregar su clase en la etiqueta input.
         background: #sucolor;
         color: #sucolor;
       }
+      
+      
+### 4.- Muestra:
+![Imagen](https://raw.githubusercontent.com/erick-ciudaz/estilo_calendar/master/Sin%20t%C3%ADtulo.png "Calendario")
