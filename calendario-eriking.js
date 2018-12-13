@@ -316,7 +316,8 @@
 
             
 
-                btn.addEventListener("click",function () {
+                btn.addEventListener("click",function (e) {
+                    e.preventDefault();
                     if (sw===0) {
                         a_temp=a.value;
                         m_temp=m.value-1;
