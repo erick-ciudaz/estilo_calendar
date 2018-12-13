@@ -193,7 +193,8 @@
             var muestra_mes=crear_elemento("div","mes_c",t_mes);
             muestra_mes.textContent=meses[mes]+' '+año;
 
-            /*creamos botones de anterior y siguiente mes*/
+            /*creamos botones de anterior y 
+            uiente mes*/
 
            
             var sig_m=crear_elemento("button","siguiente",t_mes);sig_m.textContent=">";
@@ -204,13 +205,13 @@
                 
               }
             ant_m.addEventListener("click",function (e) {
-               
+               e.preventDefault();
                 cal.classList.add("animacion-der");
             })
             
          
             sig_m.addEventListener("click",function (e) {
-  
+                   e.preventDefault();
                 cal.classList.add("animacion-izq");               
             })
 
